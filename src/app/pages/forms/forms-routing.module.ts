@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: FormsPage
+  },
+  {
+    path: 'create-form-modal',
+    loadChildren: () => import('./create-form-modal/create-form-modal.module').then( m => m.CreateFormModalPageModule)
   }
 ];
 

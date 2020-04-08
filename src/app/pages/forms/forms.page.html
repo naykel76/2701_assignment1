@@ -1,9 +1,18 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>forms</ion-title>
+    <ion-title>Forms</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+    <ion-item>
+        <!-- on click open the create modal -->
+        <ion-button (click)="openModal()">Create Form</ion-button>
+    </ion-item>
+
+    <ion-list>
+        <ion-item *ngFor="let form of forms"> {{ form.name }} </ion-item>
+    </ion-list>
 
 </ion-content>
